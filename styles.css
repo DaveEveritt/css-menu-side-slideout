@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+.menu {
+  position: fixed;
+  right: -140px;
+  width: 140px;
+  height: 100%;
+  padding-left: 50px;
+  z-index: 100;
+  box-shadow: -3px 0 5px rgba(0,0,0,.2);
+  background: rgba(225,225,225,.94);
+  color: #333;
+  transition: all 0.4s;
+}
+.menu:hover,
+.menu:focus {
+  transform: translateX(-140px);
+}
+.title {
+  position: absolute;
+  left: -38%;
+  top: 47%;
+  width: 100%;
+  transform: rotate(-90deg);
+  text-align: center;
+}
+nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav a {
+  padding: 15px 0 15px 2em;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+nav a:hover {
+  color: #999;
+}
+
+main {
+  padding-top: 2em;
+  font-size: 2.5em;
+  text-align: center;
+}
